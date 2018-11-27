@@ -37,6 +37,7 @@ public:
 	void calcularRegimen();
 	void calcularDieta();
 	void calcularCalorias();
+	void asignarNombre(char[50]);
 
 	int obtenerEdad();
 	int obtenerCondicion();

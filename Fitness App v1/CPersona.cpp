@@ -363,6 +363,11 @@ void CPersona::calcularCalorias()
 	}
 }
 
+void CPersona::asignarNombre(char temp [50])
+{
+	strcpy(m_nombre, temp);
+}
+
 
 int CPersona::obtenerEdad()
 {
