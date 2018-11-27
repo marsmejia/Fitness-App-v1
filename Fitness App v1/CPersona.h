@@ -11,6 +11,7 @@ class CPersona
 	CDieta dieta;
 	friend class CFitnessAppv1Dlg;
 	friend class CUsuarios;
+	friend class CDatosUsuario;
 
 public:
 	CPersona();
@@ -35,9 +36,9 @@ public:
 	void asignarActividadProm(int);
 	void asignarActividad(int);
 	void calcularRegimen();
-	void calcularDieta();
 	void calcularCalorias();
 	void asignarNombre(char[50]);
+	
 
 	int obtenerEdad();
 	int obtenerCondicion();
@@ -54,5 +55,6 @@ public:
 	int obtenerProposito();
 	char obtenerSexo();
 	char* obtenerNombre();
+	char* riesgoImc();
 };
 

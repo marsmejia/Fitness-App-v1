@@ -60,6 +60,9 @@
     <ClInclude Include="CUserSelec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CDesarollo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Fitness App v1.cpp">
@@ -102,6 +105,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CUserSelec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDesarollo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

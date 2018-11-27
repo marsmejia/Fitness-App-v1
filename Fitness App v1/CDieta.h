@@ -9,6 +9,7 @@ public:
 	CDieta();
 	~CDieta();
 	void calcularDieta(double, double, double, int, int, int);
-	void imprimirDieta();
+	char* imprimirDieta();
+	friend class CFitnessAppv1Dlg;
 };
 

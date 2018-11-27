@@ -345,12 +345,7 @@ void CPersona::calcularRegimen()
 
 }
 
-void CPersona::calcularDieta()
-{
-	// caloriasIng caloriasRecom caloriasQuemadas proposito condicion
-	dieta.calcularDieta(m_caloriasIng, m_caloriasRecom, m_caloriasQuemadas, m_proposito, m_condicion, m_edad);
-	dieta.imprimirDieta();
-}
+
 
 void CPersona::calcularCalorias()
 {
@@ -443,4 +438,45 @@ char  CPersona::obtenerSexo()
 char * CPersona::obtenerNombre()
 {
 	return m_nombre;
+}
+
+char * CPersona::riesgoImc()
+{
+	char* temp;
+	if (m_sexo == 'm') {
+		if (m_imc < 20) {
+			temp = "Peso Bajo";
+		}
+		else if (m_imc >= 20 && m_imc < 25) {
+			temp = "Normal";
+		}
+		else if (m_imc >= 25 && m_imc < 30) {
+			temp = "Obesidad Leve";
+		}
+		else if (m_imc >= 30 && m_imc < 40) {
+			temp = "Obesidad Moderada";
+		}
+		else {
+			temp = "Obesidad Severa";
+		}
+	}
+	else {
+		if (m_imc < 20) {
+			temp = "Peso Bajo";
+		}
+		else if (m_imc >= 20 && m_imc < 24) {
+			temp = "Normal";
+		}
+		else if (m_imc >= 24 && m_imc < 29) {
+			temp = "Obesidad Leve";
+		}
+		else if (m_imc >= 29 && m_imc < 37) {
+			temp = "Obesidad Moderada";
+		}
+		else {
+			temp = "Obesidad Severa";
+		}
+	}
+
+	return temp;
 }

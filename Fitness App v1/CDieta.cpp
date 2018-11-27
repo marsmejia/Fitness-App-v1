@@ -20,11 +20,6 @@ void CDieta::calcularDieta(double ing, double recom, double quemadas, int propos
 	if (proposito == 1) {
 		caloriast -= 500;
 	}
-	else if (proposito == 4) {
-		//cout << "Ingrese su restriccion calorica : ";
-		//cin >> caloriast;
-		//cout << endl;
-	}
 	m_caloriasRecom = recom;
 	m_calorias = caloriast;
 	m_condicion = condicion;
@@ -98,33 +93,20 @@ void CDieta::calcularDieta(double ing, double recom, double quemadas, int propos
 
 }
 
-void CDieta::imprimirDieta()
+char* CDieta::imprimirDieta()
 {
-	/*switch(m_condicion){
+	switch(m_condicion){
 	default:
-		cout << "Te recomendamos lo siguente : " << endl;
+		return "Te recomendamos lo siguente : ";
 		break;
 	case 1:
-		cout << "Debido a que tienes diabetes te recomendamos lo siguente : " << endl;
+		return "Debido a que tienes diabetes te recomendamos lo siguente : ";
 		break;
 	case 2:
-		cout << "Debido a que tienes hipertension te recomendamos lo siguente : " << endl;
+		return "Debido a que tienes hipertension te recomendamos lo siguente : ";
 		break;
 	case 4:
-		cout << "Debido a que estas embarazada te recomendamos lo siguente : " << endl;
+		return "Debido a que estas embarazada te recomendamos lo siguente : ";
 		break;
-
 	}
-	cout << "La cantidad recomendada de calorias es  : " << m_caloriasRecom << "kcal" << endl;
-	cout << "De las cuales te faltan : " << m_calorias << "kcal por consumir" << endl;
-	cout << "La cantidad de carbohidratos recomendados : " << m_carbohidratos << "kcal" << endl;
-	cout << "La cantidad de grasas totales : " << m_grasastotales << "kcal" << endl;
-	cout << "La cantidad de proteinas : " << m_proteinas << "kcal" << endl;
-	cout << "La cantidad de grasas saturadas : " << m_grasasSaturadas << "kcal" << endl;
-	cout << "La cantidad de grasas poli - insaturadas : " << m_grasaspoli << "kcal" << endl;
-	cout << "La cantidad de grasas mono - insaturadas : " << m_grasasmono << "kcal" << endl;
-	cout << "La cantidad de grasas trans : " << m_grasastrans << "kcal" << endl;
-	cout << "La cantidad de fibra : " << m_fibra << "gr" << endl;
-	cout << "La cantidad de colesterol : " << m_colesterol << "mg" << endl;
-	*/
 }

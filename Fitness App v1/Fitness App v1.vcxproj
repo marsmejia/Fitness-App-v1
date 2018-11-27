@@ -184,6 +184,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CDatosUsuario.h" />
+    <ClInclude Include="CDesarollo.h" />
     <ClInclude Include="CDieta.h" />
     <ClInclude Include="CMetaDiariaCal.h" />
     <ClInclude Include="CMetaDiariaIng.h" />
@@ -201,6 +202,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CDatosUsuario.cpp" />
+    <ClCompile Include="CDesarollo.cpp" />
     <ClCompile Include="CDieta.cpp" />
     <ClCompile Include="CMetaDiariaCal.cpp" />
     <ClCompile Include="CMetaDiariaIng.cpp" />
