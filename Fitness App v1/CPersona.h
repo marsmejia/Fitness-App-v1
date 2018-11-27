@@ -12,6 +12,7 @@ class CPersona
 	friend class CFitnessAppv1Dlg;
 	friend class CUsuarios;
 	friend class CDatosUsuario;
+	friend class CMetaDiariaCal;
 
 public:
 	CPersona();
