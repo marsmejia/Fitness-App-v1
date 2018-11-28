@@ -13,6 +13,7 @@ class CPersona
 	friend class CUsuarios;
 	friend class CDatosUsuario;
 	friend class CMetaDiariaCal;
+	friend class CProgreso;
 
 public:
 	CPersona();

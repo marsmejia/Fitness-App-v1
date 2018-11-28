@@ -71,9 +71,9 @@ int CTiempo::obtenerSegundos()
 	return m_segundos;
 }
 
-double CTiempo::obtenerMinTotales()
+int CTiempo::obtenerMinTotales()
 {
-	return ((m_horas * 60) + m_minutos + (m_segundos / 60));
+	return ((m_horas * 60) + m_minutos);
 }
 
 void CTiempo::mostrarTiempo()

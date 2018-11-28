@@ -17,7 +17,7 @@ public:
 	int obtenerHoras();
 	int obtenerMinutos();
 	int obtenerSegundos();
-	double obtenerMinTotales();
+	int obtenerMinTotales();
 
 	void mostrarTiempo();
 	void temporizador(bool);
